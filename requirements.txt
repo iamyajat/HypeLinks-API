@@ -1,0 +1,9 @@
+pydantic==1.8.1
+numpy==1.19.5
+transformers==4.5.0
+uvicorn==0.13.4
+requests==2.25.1
+tensorflow-cpu==2.4.1
+tqdm==4.60.0
+beautifulsoup4==4.9.3
+fastapi==0.63.0
