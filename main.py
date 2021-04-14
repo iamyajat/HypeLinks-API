@@ -20,9 +20,12 @@ embed_size = 64
 distil_bert = "distilbert-base-uncased"
 
 
-save_directory = "./models/tokenizer/"
+token_directory = "./models/tokenizer/"
 
-tokenizer = DistilBertTokenizer.from_pretrained(save_directory)
+# Download the weights from "https://www.dropbox.com/s/faqqelakxy1move/weights3.h5?dl=0" and put them in as "./models/weights/weights3.h5"
+weights_directory = "./models/weights/weights3.h5"
+
+tokenizer = DistilBertTokenizer.from_pretrained(token_directory)
 
 
 def tokenize(sentences, tokenizer):
@@ -70,7 +73,7 @@ def pred_model():
         metrics=["accuracy"],
     )
 
-    model.load_weights("models/weights/weights3.h5")
+    model.load_weights(weights_directory)
     is_model = True
     return model
 
