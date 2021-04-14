@@ -19,7 +19,7 @@
   <p align="center">
     An API that can classify websites into 10 different categories
     <br />
-    <a href="https://github.com/iamyajat/smart-bookmark-api"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iamyajat/Smart-Bookmark-API/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/iamyajat/smart-bookmark-api">Demo (Coming Soon)</a>
@@ -91,8 +91,8 @@ An API that can classify a given url into various different categories.
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-Python 3.8.9 and the latest version of pip.
-
+- Python 3.8.9 and the latest version of pip.
+- Download the weights for the model from [here](https://www.dropbox.com/s/faqqelakxy1move/weights3.h5?dl=0) and put them in as [./models/weights/weights3.h5](https://github.com/iamyajat/smart-bookmark-api/tree/master/models/weights)
 ### Installation
 
 1. Clone the repo
@@ -108,7 +108,7 @@ Python 3.8.9 and the latest version of pip.
    python -m venv env
    ```
    ```sh
-   env/bin/activate
+   env\Scripts\activate
    ```
 4. Install all requirements
    ```sh
@@ -174,6 +174,6 @@ Project Link: [https://github.com/iamyajat/smart-bookmark-api](https://github.co
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
 [issues-url]: https://github.com/iamyajat/smart-bookmark-api/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/iamyajat/smart-bookmark-api/blob/master/LICENSE.txt
+[license-url]: https://github.com/iamyajat/Smart-Bookmark-API/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/iamyajat
