@@ -20,10 +20,10 @@ embed_size = 64
 distil_bert = "distilbert-base-uncased"
 
 
-token_directory = "./models/tokenizer/"
+token_directory = "./assets/tokenizer/"
 
 # Download the weights from "https://www.dropbox.com/s/faqqelakxy1move/weights3.h5?dl=0" and put them in as "./models/weights/weights3.h5"
-weights_directory = "./models/weights/weights3.h5"
+weights_directory = "./assets/weights/weights3.h5"
 
 tokenizer = DistilBertTokenizer.from_pretrained(token_directory)
 

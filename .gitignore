@@ -1,4 +1,4 @@
 /.vscode
-/models/weights/weights3.h5
+/assets/weights/weights3.h5
 /__pycache__
 /env
