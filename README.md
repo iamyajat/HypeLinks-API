@@ -10,10 +10,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<!--   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a> -->
-
+  <a href="https://github.com/iamyajat/Smart-Bookmark-API">
+    <img src="https://images.unsplash.com/photo-1506445007064-9dda1f11b5b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=victoria-bilsborough-b9zbVD--6I0-unsplash.jpg&w=2400" alt="Photo by Victoria Bilsborough" width="640" height="426">
+  </a>
+ 
   <h3 align="center">SMART BOOKMARK API</h3>
 
   <p align="center">
@@ -140,9 +140,10 @@ Contributions are what make the open source community such an amazing place to b
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'feat: AmazingFeature'`) (Please refer to the commit guidelines mentioned [here](https://www.conventionalcommits.org/en/v1.0.0/))
-5. Push to the Branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
+3. Commit your Changes (`git commit -m 'feat: AmazingFeature'`)
+   - Please refer to the commit guidelines mentioned [here](https://www.conventionalcommits.org/en/v1.0.0/).
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 
 
@@ -156,7 +157,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Yajat Malhotra - [@iamyajat](https://twitter.com/iamyajat)
+<a href="https://www.iamyajat.co/" target="_blank"><img alt="Github" src="https://img.shields.io/badge/-Website-brightgreen?style=for-the-badge&logo=appveyor&logoColor=white&color=999900&logo=data:null" /></a>
+<a href="https://linkedin.com/in/iamyajat" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://twitter.com/iamyajat" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>
+<a href="https://instagram.com/iamyajat" target="_blank"><img alt="Instagram" src="https://img.shields.io/badge/instagram-%FF69B4.svg?&style=for-the-badge&logo=instagram&logoColor=white&color=cd486b" /></a>
+
 
 Project Link: [https://github.com/iamyajat/smart-bookmark-api](https://github.com/iamyajat/smart-bookmark-api)
 
@@ -165,15 +170,15 @@ Project Link: [https://github.com/iamyajat/smart-bookmark-api](https://github.co
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
 [contributors-url]: https://github.com/iamyajat/smart-bookmark-api/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
 [forks-url]: https://github.com/iamyajat/smart-bookmark-api/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
 [stars-url]: https://github.com/iamyajat/smart-bookmark-api/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
 [issues-url]: https://github.com/iamyajat/smart-bookmark-api/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
 [license-url]: https://github.com/iamyajat/Smart-Bookmark-API/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/iamyajat
