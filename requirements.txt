@@ -1,4 +1,4 @@
-pydantic==1.8.1
+pydantic==1.8.2
 numpy==1.19.5
 transformers==4.5.0
 uvicorn==0.13.4
