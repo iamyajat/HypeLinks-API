@@ -6,4 +6,4 @@ requests==2.25.1
 tensorflow-cpu==2.4.1
 tqdm==4.60.0
 beautifulsoup4==4.9.3
-fastapi==0.63.0
+fastapi==0.65.2
