@@ -122,7 +122,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To try the API out, go to [https://127.0.0.1/docs#/](https://127.0.0.1/docs#/) and test the different end-points out.
+To try the API out, go to [http://127.0.0.1:8000/docs/](http://127.0.0.1:8000/docs/) and test the different end-points out.
 
 
 
