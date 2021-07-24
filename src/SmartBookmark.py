@@ -24,9 +24,7 @@ vocab_size = 15000
 embed_size = 64
 mobile_bert = "google/mobilebert-uncased"
 
-token_directory = "./assets/tokenizer2/"
-
-# Download the weights from "https://www.dropbox.com/s/faqqelakxy1move/weights3.h5?dl=0" and put them in as "./models/weights/weights3.h5"
+token_directory = "./assets/tokenizer/"
 weights_directory = "./assets/weights/weights.h5"
 
 tokenizer = MobileBertTokenizer.from_pretrained(token_directory)
