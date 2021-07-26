@@ -92,7 +92,8 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 - Python 3.8.9 and the latest version of pip.
-- Download the weights for the model from [here](https://www.dropbox.com/s/faqqelakxy1move/weights3.h5?dl=0) and put them in as [./assets/weights/weights3.h5](https://github.com/iamyajat/smart-bookmark-api/tree/master/assets/weights)
+
+
 ### Installation
 
 1. Clone the repo
