@@ -17,7 +17,7 @@ async def index():
 
 @app.get("/list")
 async def index():
-    return [v for k, v in labels.items()]
+    return {"categories": [v for k, v in labels.items()]}
 
 
 class Input(BaseModel):
