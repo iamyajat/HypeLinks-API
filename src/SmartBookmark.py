@@ -11,7 +11,7 @@ labels = {
     1: "Science & Technology",
     2: "Blogs",
     3: "Business",
-    4: "Food and Recipes",
+    4: "Food & Recipes",
     5: "Fitness & Wellbeing",
     6: "News",
     7: "Sports",

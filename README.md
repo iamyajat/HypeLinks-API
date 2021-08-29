@@ -68,7 +68,7 @@ An API that can classify a given url into various different categories.
 - Sports
 - News
 - Fitness & Wellbeing
-- Food and Recipes
+- Food & Recipes
 - Politics
 - Entertainment
 - Business
