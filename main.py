@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 import uvicorn
 from pydantic import BaseModel
 from src.SmartBookmark import evaluate, labels
@@ -21,16 +21,16 @@ async def index():
 
 
 class Input(BaseModel):
-    data: str
+    url: str
 
 
 @app.post("/classify")
 async def get_item(input: Input):
     try:
-        title, test_preds = evaluate(input.data)
+        title, test_preds = evaluate(input.url)
         return {"title": title[0], "category": test_preds}
     except:
-        return {"message": "Error"}
+        raise HTTPException(status_code=400, detail="Enter a valid URL!")
 
 
 if __name__ == "__main__":
