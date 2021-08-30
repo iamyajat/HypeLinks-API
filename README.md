@@ -22,7 +22,7 @@
     <a href="https://github.com/iamyajat/Smart-Bookmark-API/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/iamyajat/smart-bookmark-api">Demo (Coming Soon)</a>
+    <a href="https://smart-bookmark-api.iamyajat.co/docs">Demo</a>
     ·
     <a href="https://github.com/iamyajat/smart-bookmark-api/issues">Report Bug</a>
     ·
