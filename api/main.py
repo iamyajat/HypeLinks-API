@@ -4,9 +4,9 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import uvicorn
 from pydantic import BaseModel
-from src.SmartBookmark import evaluate, labels
+from api.SmartBookmark import evaluate, labels
 import azure.functions as func
-from src.http_asgi import AsgiMiddleware
+from api.http_asgi import AsgiMiddleware
 import mimesis
 
 app = FastAPI(
