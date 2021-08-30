@@ -5,6 +5,9 @@ from fastapi.templating import Jinja2Templates
 import uvicorn
 from pydantic import BaseModel
 from src.SmartBookmark import evaluate, labels
+import azure.functions as func
+from src.http_asgi import AsgiMiddleware
+import mimesis
 
 app = FastAPI(
     title="Smart Bookmark",
@@ -37,6 +40,10 @@ async def get_item(input: Input):
         return {"title": title[0], "category": test_preds}
     except:
         raise HTTPException(status_code=400, detail="Enter a valid URL!")
+
+        
+def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
+    return AsgiMiddleware(app).handle(req, context)
 
 
 if __name__ == "__main__":
