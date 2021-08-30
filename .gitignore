@@ -1,6 +1,3 @@
-/.vscode
-/api/assets/weights/weights3.h5
 /__pycache__
 /api/__pycache__
 /env
-.python_packages
