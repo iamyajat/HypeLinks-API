@@ -1,4 +1,7 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request, APIRouter
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 import uvicorn
 from pydantic import BaseModel
 from src.SmartBookmark import evaluate, labels
@@ -9,10 +12,13 @@ app = FastAPI(
     description="Classifies the sites into various different categories",
 )
 
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
+
 
 @app.get("/")
-async def index():
-    return {"message": "Smart Bookmark is online"}
+async def index(request: Request):
+    return templates.TemplateResponse("homepage.html", {"request": request, "id": 1})
 
 
 @app.get("/list")

@@ -7,3 +7,6 @@ numpy==1.19.5
 tqdm==4.60.0
 beautifulsoup4==4.9.3
 fastapi==0.67.0
+jinja2==3.0.1
+Markdown==3.3.4
+aiofiles==0.7.0
