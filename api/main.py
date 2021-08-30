@@ -7,7 +7,6 @@ from pydantic import BaseModel
 from api.SmartBookmark import evaluate, labels
 import azure.functions as func
 from api.http_asgi import AsgiMiddleware
-import mimesis
 
 app = FastAPI(
     title="Smart Bookmark",
