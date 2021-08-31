@@ -20,7 +20,7 @@ app.add_middleware(
     allow_origins=[
         "http://127.0.0.1:8000",
         "http://0.0.0.0:8000",
-        "http://smart-bookmark-api.iamyajat.co",
+        "https://smart-bookmark-api.iamyajat.co",
         "https://smart-bookmark-api.azurewebsites.net",
     ],  # Allows all origins
     allow_credentials=True,
