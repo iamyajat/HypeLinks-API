@@ -7,11 +7,25 @@ from pydantic import BaseModel
 from api.SmartBookmark import evaluate, labels
 import azure.functions as func
 from api.http_asgi import AsgiMiddleware
+from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Smart Bookmark",
     version="1.0",
     description="Classifies the sites into various different categories",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://127.0.0.1:8000",
+        "http://0.0.0.0:8000",
+        "http://smart-bookmark-api.iamyajat.co",
+        "https://smart-bookmark-api.azurewebsites.net",
+    ],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
 )
 
 app.mount("/static", StaticFiles(directory="static"), name="static")

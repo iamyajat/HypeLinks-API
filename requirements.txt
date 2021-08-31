@@ -6,8 +6,9 @@ tensorflow-cpu==2.5.1
 numpy==1.19.5
 tqdm==4.60.0
 beautifulsoup4==4.9.3
-fastapi==0.67.0
+fastapi==0.68.1
 jinja2==3.0.1
 Markdown==3.3.4
 aiofiles==0.7.0
 azure-functions==1.7.2
+starlette==0.13.6
