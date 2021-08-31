@@ -20,11 +20,17 @@ app.add_middleware(
     allow_origins=[
         "http://127.0.0.1:8000",
         "http://0.0.0.0:8000",
+        "http://localhost",
+        "http://localhost:8000",
+        "http://localhost:3000",
+        "http://localhost:0000",
+        "http://smart-bookmark-api.iamyajat.co",
         "https://smart-bookmark-api.iamyajat.co",
+        "http://smart-bookmark-api.azurewebsites.net",
         "https://smart-bookmark-api.azurewebsites.net",
-    ],  # Allows all origins
+    ],
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["*"],
     allow_headers=["Access-Control-Allow-Origin", "*"],
 )
 
@@ -54,7 +60,7 @@ async def get_item(input: Input):
     except:
         raise HTTPException(status_code=400, detail="Enter a valid URL!")
 
-        
+
 def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
     return AsgiMiddleware(app).handle(req, context)
 
