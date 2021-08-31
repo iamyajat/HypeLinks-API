@@ -25,7 +25,7 @@ app.add_middleware(
     ],  # Allows all origins
     allow_credentials=True,
     allow_methods=["GET", "POST"],
-    allow_headers=["*"],
+    allow_headers=["Access-Control-Allow-Origin", "*"],
 )
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
