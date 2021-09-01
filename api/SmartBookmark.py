@@ -92,9 +92,17 @@ def get_title(url):
     return test[0:1]
 
 
-def evaluate(url):
+def evaluateUrl(url):
     print(url)
     title = get_title(url)
+    print(title)
+    test_seq = tokenize(title, tokenizer)
+    test_preds = labels[np.argmax(model.predict(test_seq)[0])]
+    print(test_preds)
+    return title, test_preds
+
+
+def evaluateText(title):
     print(title)
     test_seq = tokenize(title, tokenizer)
     test_preds = labels[np.argmax(model.predict(test_seq)[0])]

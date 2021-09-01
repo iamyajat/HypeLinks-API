@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import uvicorn
 from pydantic import BaseModel
-from api.SmartBookmark import evaluate, labels
+from api.SmartBookmark import evaluateText, evaluateUrl, labels
 import azure.functions as func
 from api.http_asgi import AsgiMiddleware
 from starlette.middleware.cors import CORSMiddleware
@@ -43,22 +43,38 @@ async def index(request: Request):
     return templates.TemplateResponse("homepage.html", {"request": request, "id": 1})
 
 
+@app.get("/status")
+async def index():
+    return {"status": "online"}
+
+
 @app.get("/list")
 async def index():
     return {"categories": [v for k, v in labels.items()]}
 
 
-class Input(BaseModel):
+class InputUrl(BaseModel):
     url: str
 
+class InputText(BaseModel):
+    text: str
 
-@app.post("/classify")
-async def get_item(input: Input):
+@app.post("/classify/url")
+async def get_item(input: InputUrl):
     try:
-        title, test_preds = evaluate(input.url)
+        title, test_preds = evaluateUrl(input.url)
         return {"title": title[0], "category": test_preds}
     except:
         raise HTTPException(status_code=400, detail="Enter a valid URL!")
+
+
+@app.post("/classify/text")
+async def get_item(input: InputText):
+    try:
+        title, test_preds = evaluateText(input.text)
+        return {"title": title[0], "category": test_preds}
+    except:
+        raise HTTPException(status_code=400, detail="Error")
 
 
 def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
