@@ -11,7 +11,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Smart Bookmark",
-    version="1.0",
+    version="1.0.0-beta",
     description="Classifies the sites into various different categories",
 )
 
@@ -71,7 +71,7 @@ async def get_item(input: InputUrl):
 @app.post("/classify/text")
 async def get_item(input: InputText):
     try:
-        title, test_preds = evaluateText(input.text)
+        title, test_preds = evaluateText([input.text])
         return {"title": title[0], "category": test_preds}
     except:
         raise HTTPException(status_code=400, detail="Error")
