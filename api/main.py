@@ -5,8 +5,6 @@ from fastapi.templating import Jinja2Templates
 import uvicorn
 from pydantic import BaseModel
 from api.SmartBookmark import evaluateText, evaluateUrl, labels
-import azure.functions as func
-from api.http_asgi import AsgiMiddleware
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
@@ -86,9 +84,5 @@ async def get_item(input: InputText):
         raise HTTPException(status_code=400, detail="Error")
 
 
-def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
-    return AsgiMiddleware(app).handle(req, context)
-
-
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="0.0.0.0", port=5000)
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=5000)
