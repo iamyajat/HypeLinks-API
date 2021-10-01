@@ -10,8 +10,8 @@ from api.http_asgi import AsgiMiddleware
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
-    title="Smart Bookmark",
-    version="1.0.0-beta",
+    title="HypeLinks API: A Smart Bookmark API",
+    version="1.0.0-beta02",
     description="Classifies the sites into various different categories",
 )
 
@@ -50,20 +50,29 @@ async def index():
 
 @app.get("/list")
 async def index():
-    return {"categories": [v for k, v in labels.items()]}
+    return {
+        "categories": [{"category_id": k, "category": v} for k, v in labels.items()]
+    }
 
 
 class InputUrl(BaseModel):
     url: str
 
+
 class InputText(BaseModel):
     text: str
+
 
 @app.post("/classify/url")
 async def get_item(input: InputUrl):
     try:
         title, test_preds = evaluateUrl(input.url)
-        return {"title": title[0], "category": test_preds}
+        return {
+            "url": input.url,
+            "title": title[0],
+            "category": test_preds,
+            "category_id": id,
+        }
     except:
         raise HTTPException(status_code=400, detail="Enter a valid URL!")
 
@@ -71,8 +80,8 @@ async def get_item(input: InputUrl):
 @app.post("/classify/text")
 async def get_item(input: InputText):
     try:
-        title, test_preds = evaluateText([input.text])
-        return {"title": title[0], "category": test_preds}
+        title, test_preds, id = evaluateText([input.text])
+        return {"title": title[0], "category": test_preds, "category_id": id}
     except:
         raise HTTPException(status_code=400, detail="Error")
 
