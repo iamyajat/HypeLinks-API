@@ -1,16 +1,210 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.inner-small {
-    color: green;
+body{
+    background-color: rgb(225, 245, 245);
+    font-family: Spartan;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+}
+.heading {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.boxes{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.doc-btn a{
+    padding: 1vw;
+    margin: 2vw;
+    text-decoration: none;
+    background-color: rgb(71, 198, 236);
+    border: 1px solid rgb(71, 198, 236);
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
     font-weight: bold;
 }
-
-h1 {
-    margin-bottom: 10px;
+.doc-btn a:hover{
+    color: rgb(71, 198, 236);
+    background-color: white;
+}
+.boxes .row{
+    display: flex;    
+    height: 50%;
+}
+.boxes .box{
+    width: 50%;
+    background-color: white;
+    border: 1px solid rgb(71, 198, 236);
+    margin: 1vw;
+    font-weight: bold;
+}
+.boxes .box .one{
+    height: 6vh;
+}
+.boxes .box .two{
+    padding: 2%;
+}
+.boxes .box .qwe,
+.boxes .box .asd{
+    border-right: 1px solid rgb(71, 198, 236);
+    height: 100%;
+}
+.boxes .box .qwe,
+.boxes .box .asd,
+.boxes .box .zxc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxes .box .zxc span{
+    color: rgb(143, 212, 40);
+}
+.boxes .box .qwe p{
+    background-color: rgb(71, 198, 236);
+    width: 70%;
+    margin: auto;
+    color: white;
+    padding: 4%;
+    border-radius: 10px;
+}
+.boxes .box .one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid rgb(71, 198, 236);
+}
+.boxes .box .one .qwe{
+    width: 20%;
+}
+.boxes .box .one .asd{
+    width: 50%;
+}
+.boxes .box .one .zxc{
+    width: 30%;
 }
 
-p {
-    padding-top: 20px;
+/* socials */
+.wrapper a{
+    color: black;
 }
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+    width: 200px;
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+    background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+    background: #2867B2;
+}
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+    color: #fff;
+}
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+    color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+    color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+    color: #333;
+}
+.wrapper .button:nth-child(5) span{
+    color: #2867B2;
+}
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.name span{
+    color: rgb(26, 182, 230);
+    font-size: 40px;
+}
+.name .blue{
+    color: rgb(71, 198, 236);
+    font-size: 20px !important;
+}
+/* @media all and (max-width:1000px){
+    .boxes .box{
+        width: 95% !important;
+        margin: auto;
+    }
+    .row{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .row1{
+        transform: translateY(70%) !important;
+    }
+} */
