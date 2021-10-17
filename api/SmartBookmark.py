@@ -105,3 +105,6 @@ def evaluateUrl(url):
     print(url)
     title = get_title(url)
     return evaluateText(title)
+
+# Test
+# evaluateUrl('https://www.food.com/ideas/italian-food-recipes-at-home-6828#c-701103')

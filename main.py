@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="HypeLinks API: A Smart Bookmark API",
-    version="1.0.0-beta02",
+    version="1.0.0-beta03",
     description="Classifies the sites into various different categories",
 )
 
@@ -64,12 +64,12 @@ class InputText(BaseModel):
 @app.post("/classify/url")
 async def get_item(input: InputUrl):
     try:
-        title, test_preds = evaluateUrl(input.url)
+        title, test_preds, cat_id = evaluateUrl(input.url)
         return {
             "url": input.url,
             "title": title[0],
             "category": test_preds,
-            "category_id": id,
+            "category_id": int(cat_id),
         }
     except:
         raise HTTPException(status_code=400, detail="Enter a valid URL!")
@@ -78,8 +78,12 @@ async def get_item(input: InputUrl):
 @app.post("/classify/text")
 async def get_item(input: InputText):
     try:
-        title, test_preds, id = evaluateText([input.text])
-        return {"title": title[0], "category": test_preds, "category_id": id}
+        title, test_preds, cat_id = evaluateText([input.text])
+        return {
+            "title": title[0],
+            "category": test_preds,
+            "category_id": int(cat_id),
+        }
     except:
         raise HTTPException(status_code=400, detail="Error")
 

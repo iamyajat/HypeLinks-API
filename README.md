@@ -117,7 +117,7 @@ To get a local copy up and running follow these simple steps.
    ```
 5. Start the API
    ```sh
-   uvicorn api.main:app --reload
+   uvicorn main:app --reload
    ```
 
 <!-- USAGE EXAMPLES -->
