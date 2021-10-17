@@ -10,23 +10,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/iamyajat/Smart-Bookmark-API">
+  <a href="https://github.com/iamyajat/hypelinks-API">
     <img src="https://images.unsplash.com/photo-1506445007064-9dda1f11b5b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=victoria-bilsborough-b9zbVD--6I0-unsplash.jpg&w=2400" alt="Photo by Victoria Bilsborough" width="640" height="426">
   </a>
  
-  <h3 align="center">SMART BOOKMARK API</h3>
+  <h3 align="center">HYPELINKS API</h3>
 
   <p align="center">
-    An API that can classify websites into 10 different categories
+    A Smart Bookmark API that can classify websites into 10 different categories
     <br />
-    <a href="https://github.com/iamyajat/Smart-Bookmark-API/blob/master/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iamyajat/hypelinks-API/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://smart-bookmark-api.iamyajat.co/">Demo</a>
+    <a href="#">Demo (Coming Soon)</a>
     ·
-    <a href="https://github.com/iamyajat/smart-bookmark-api/issues">Report Bug</a>
+    <a href="https://github.com/iamyajat/hypelinks-api/issues">Report Bug</a>
     ·
-    <a href="https://github.com/iamyajat/smart-bookmark-api/issues">Request Feature</a>
+    <a href="https://github.com/iamyajat/hypelinks-api/issues">Request Feature</a>
   </p>
 </p>
 
@@ -79,7 +79,7 @@ An API that can classify a given url into various different categories.
 
 ### Built With
 
-* [Python 3.8.9](https://www.python.org/downloads/release/python-389/)
+* [Python 3.8.10](https://www.python.org/downloads/release/python-3810/)
 * [FastAPI](https://fastapi.tiangolo.com/)
 * [TensorFlow 2](https://www.tensorflow.org/)
 
@@ -91,14 +91,14 @@ An API that can classify a given url into various different categories.
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-- Python 3.8.9 and the latest version of pip.
+- Python 3.8.10 and the latest version of pip.
 
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/iamyajat/smart-bookmark-api.git
+   git clone https://github.com/iamyajat/hypelinks-api.git
    ```
 2. Install `virtualenv`
    ```sh
@@ -109,7 +109,7 @@ To get a local copy up and running follow these simple steps.
    python -m venv env
    ```
    ```sh
-   env\Scripts\activate
+   .\env\Scripts\activate
    ```
 4. Install all requirements
    ```sh
@@ -130,7 +130,7 @@ To try the API out, go to [http://127.0.0.1:8000/docs/](http://127.0.0.1:8000/do
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/iamyajat/smart-bookmark-api/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/iamyajat/hypelinks-api/issues) for a list of proposed features (and known issues).
 
 
 
@@ -164,22 +164,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <a href="https://instagram.com/iamyajat" target="_blank"><img alt="Instagram" src="https://img.shields.io/badge/instagram-%FF69B4.svg?&style=for-the-badge&logo=instagram&logoColor=white&color=cd486b" /></a>
 
 
-Project Link: [https://github.com/iamyajat/smart-bookmark-api](https://github.com/iamyajat/smart-bookmark-api)
+Project Link: [https://github.com/iamyajat/hypelinks-api](https://github.com/iamyajat/hypelinks-api)
 
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
-[contributors-url]: https://github.com/iamyajat/smart-bookmark-api/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
-[forks-url]: https://github.com/iamyajat/smart-bookmark-api/network/members
-[stars-shield]: https://img.shields.io/github/stars/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
-[stars-url]: https://github.com/iamyajat/smart-bookmark-api/stargazers
-[issues-shield]: https://img.shields.io/github/issues/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
-[issues-url]: https://github.com/iamyajat/smart-bookmark-api/issues
-[license-shield]: https://img.shields.io/github/license/iamyajat/Smart-Bookmark-API.svg?style=for-the-badge
-[license-url]: https://github.com/iamyajat/Smart-Bookmark-API/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/iamyajat/hypelinks-API.svg?style=for-the-badge
+[contributors-url]: https://github.com/iamyajat/hypelinks-api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/iamyajat/hypelinks-API.svg?style=for-the-badge
+[forks-url]: https://github.com/iamyajat/hypelinks-api/network/members
+[stars-shield]: https://img.shields.io/github/stars/iamyajat/hypelinks-API.svg?style=for-the-badge
+[stars-url]: https://github.com/iamyajat/hypelinks-api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/iamyajat/hypelinks-API.svg?style=for-the-badge
+[issues-url]: https://github.com/iamyajat/hypelinks-api/issues
+[license-shield]: https://img.shields.io/github/license/iamyajat/hypelinks-API.svg?style=for-the-badge
+[license-url]: https://github.com/iamyajat/hypelinks-API/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/iamyajat
