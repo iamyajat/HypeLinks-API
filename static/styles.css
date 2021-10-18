@@ -12,27 +12,30 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
     justify-content: space-around;
-    height: 100vh;
     width: 100%;
 }
 .heading {
     width: 100%;
-    height: 15vh;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    min-height: 15vh;
+    margin:1rem; 
     justify-content: space-around;
 }
 .boxes{
     width: 100%;
-    height: 65vh;
     display: flex;
+    min-height: 65vh;
     flex-direction: column;
 }
 .footer{
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-wrap:wrap; 
     align-items: center;
     justify-content: space-around;
 }
@@ -52,9 +55,9 @@ body{
     background-color: white;
 }
 .boxes .row{
-    display: flex;    
-    height: 50%;
+    display: flex;  
 }
+
 .boxes .box{
     width: 50%;
     background-color: white;
@@ -194,6 +197,60 @@ body{
 .name .blue{
     color: rgb(71, 198, 236);
     font-size: 20px !important;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and  (max-width: 576px) { 
+    body{
+        font-size: 13px;
+     }
+     p{
+        font-size: 10px;
+     }
+     .boxes .box .qwe p{
+        padding: 6px;
+        width: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and  (min-width: 768px) { 
+    body{
+        font-size: 13px;
+     }
+     p{
+        font-size: 2vmin;
+     }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media only screen and (max-width: 1200px) {
+ .doc-btn{
+    margin: 1rem;
+ }
+ .boxes .row {
+    flex-wrap: wrap;
+ }
+ .boxes .box {
+     width: 90%;
+     margin:10px auto;
+ }
+ .boxes .box .one {
+
+ }
+ .boxes .box .one .qwe{
+    width: 20%;
+ }
+ .boxes .box .one .asd{
+    width: 70%;
+ }
+ .boxes .box .one .zxc{
+    width: auto;
+
+ }
+ .wrapper{
+    margin: 1.5rem;
+ }
+
 }
 /* @media all and (max-width:1000px){
     .boxes .box{
