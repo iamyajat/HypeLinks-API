@@ -10,7 +10,7 @@ from api.http_asgi import AsgiMiddleware
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
-    title="Smart Bookmark",
+    title="HypeLinks",
     version="1.0.0-beta",
     description="Classifies the sites into various different categories",
 )

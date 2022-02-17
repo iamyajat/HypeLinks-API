@@ -13,15 +13,141 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Smart Bookmark API</title>
-    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
 <body>
-    <h1>Smart Bookmark API</h1>
-    <small>Status: <small class="inner-small">Online</small></small>
-    <p><a href="/docs">Documentation</a></p>
-    <p><a href="https://github.com/iamyajat/Smart-Bookmark-API/" target="_blank">GitHub</a></p>
-    <p>Made with 💙 by <a href="https://iamyajat.co" target="_blank">Yajat Malhotra</a></p>
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h1>HypeLinks API</h1>
+            </div>
+            <div class="doc-btn">
+                <a href="/docs/">Documentation</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <div class="row">
+                <div class="box">
+                    <div class="one">
+                        <div class="qwe">
+                            <p>POST</p>
+                        </div>
+                        <div class="asd">
+                            <p>http://127.0.0.1:8000/classify/url</p>
+                        </div>
+                        <div class="zxc">
+                            <p>STATUS : <span>OK</span></p>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <p>{</p>
+                            &nbsp;&nbsp;"url": "https://www.food.com/ideas/italian-food-recipes-at-home-6828",<br>
+                            &nbsp;&nbsp;"title": "Best Italian Food Recipes - Food.com",<br>
+                            &nbsp;&nbsp;"category": "Food & Recipes",<br>
+                            &nbsp;&nbsp;"category_id": 4
+                        <p>}</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="one">
+                        <div class="qwe">
+                            <p>POST</p>
+                        </div>
+                        <div class="asd">
+                            <p>http://127.0.0.1:8000/classify/url</p>
+                        </div>
+                        <div class="zxc">
+                            <p>STATUS : <span>OK</span></p>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <p>{</p>
+                            &nbsp;&nbsp;"url": "https://sambadenglish.com/did-venus-ever-have-oceans-heres-what-study-suggests/",<br>
+                            &nbsp;&nbsp;"title": "Did Venus ever have oceans? Here’s what study suggests | Sambad English",<br>
+                            &nbsp;&nbsp;"category": "Science & Technology",<br>
+                            &nbsp;&nbsp;"category_id": 1
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="box">
+                    <div class="one">
+                        <div class="qwe">
+                            <p>POST</p>
+                        </div>
+                        <div class="asd">
+                            <p>http://127.0.0.1:8000/classify/text</p>
+                        </div>
+                        <div class="zxc">
+                            <p>STATUS : <span>OK</span></p>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <p>{</p>
+                            &nbsp;&nbsp;"title": "M1 MacBook is the best MacBook ever!"",<br>
+                            &nbsp;&nbsp;"category": "Science & Technology",<br>
+                            &nbsp;&nbsp;"category_id": 1
+                        <p>}</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="one">
+                        <div class="qwe">
+                            <p>POST</p>
+                        </div>
+                        <div class="asd">
+                            <p>http://127.0.0.1:8000/classify/text</p>
+                        </div>
+                        <div class="zxc">
+                            <p>STATUS : <span>OK</span></p>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <p>{</p>
+                            &nbsp;&nbsp;"title": "Adele's 'Easy On Me' Breaks BTS' Spotify Record",<br>
+                            &nbsp;&nbsp;"category": "Entertainment",<br>
+                            &nbsp;&nbsp;"category_id": 9
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="wrapper">
+                <a href="https://twitter.com/iamyajat" target="_blank">
+                    <div class="button">
+                        <div class="icon">
+                           <i class="fab fa-twitter"></i>
+                        </div>
+                        <span>Twitter</span>
+                    </div>
+                </a>
+                <a href="https://github.com/iamyajat" target="_blank">
+                    <div class="button">
+                        <div class="icon">
+                           <i class="fab fa-github"></i>
+                        </div>
+                        <span>Github</span>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/iamyajat" target="_blank">
+                    <div class="button">
+                        <div class="icon">
+                           <i class="fab fa-linkedin"></i>
+                        </div>
+                        <span>LinkedIn</span>
+                    </div>
+                </a>
+            </div>
+            <div class="name">Made With <span>💙</span> By <span class="blue">Yajat Malhotra</span></div>
+        </div>
+    </div>
 </body>
 
 </html>
