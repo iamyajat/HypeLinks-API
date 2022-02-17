@@ -7,7 +7,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "main:app"
+                "api.main:app"
             ],
             "jinja": true
         },

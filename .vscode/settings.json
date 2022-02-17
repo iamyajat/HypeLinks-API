@@ -3,7 +3,7 @@
     "azureFunctions.scmDoBuildDuringDeployment": true,
     "azureFunctions.pythonVenv": "env",
     "azureFunctions.projectLanguage": "Python",
-    "azureFunctions.projectRuntime": "~3",
+    "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
     "python.formatting.provider": "black"
 }

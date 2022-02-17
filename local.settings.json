@@ -2,6 +2,6 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "AzureWebJobs.app.Disabled": "false"
+    "AzureWebJobs.api.Disabled": "false"
   }
 }
