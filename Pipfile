@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+transformers = "==4.8.2"
+pydantic = "==1.8.2"
+uvicorn = "==0.13.4"
+requests = "==2.25.1"
+tensorflow-cpu = "==2.5.2"
+numpy = "==1.19.5"
+tqdm = "==4.60.0"
+beautifulsoup4 = "==4.9.3"
+fastapi = "==0.68.1"
+aiofiles = "==0.7.0"
+azure-functions = "==1.7.2"
+starlette = "==0.14.2"
+Jinja2 = "==3.0.1"
+Markdown = "==3.3.4"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

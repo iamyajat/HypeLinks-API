@@ -6,6 +6,9 @@ import uvicorn
 from pydantic import BaseModel
 from api.SmartBookmark import evaluateText, evaluateUrl, labels
 from starlette.middleware.cors import CORSMiddleware
+import os
+
+port = os.environ["PORT"]
 
 app = FastAPI(
     title="HypeLinks API: A Smart Bookmark API",
@@ -89,4 +92,4 @@ async def get_item(input: InputText):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=5000)
+    uvicorn.run(app, host="0.0.0.0", port=port, reload=False)
