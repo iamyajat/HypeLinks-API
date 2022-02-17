@@ -22,7 +22,7 @@
     <a href="https://github.com/iamyajat/hypelinks-API/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">Demo (Coming Soon)</a>
+    <a href="https://hypelinks-api.iamyajat.com/docs">Demo</a>
     ·
     <a href="https://github.com/iamyajat/hypelinks-api/issues">Report Bug</a>
     ·
