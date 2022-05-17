@@ -146,35 +146,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-### Contributors
-
-<table>
-<tr>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/iamyajat>
-            <img src=https://avatars.githubusercontent.com/u/68477362?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Yajat Malhotra/>
-            <br />
-            <sub style="font-size:14px"><b>Yajat Malhotra</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/PAARTH2608>
-            <img src=https://avatars.githubusercontent.com/u/76266935?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=PAARTH2608/>
-            <br />
-            <sub style="font-size:14px"><b>PAARTH2608</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/programmerraja>
-            <img src=https://avatars.githubusercontent.com/u/44333589?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=K.Boopathi/>
-            <br />
-            <sub style="font-size:14px"><b>K.Boopathi</b></sub>
-        </a>
-    </td>
-</tr>
-</table>
-
-
 
 <!-- LICENSE -->
 ## License
