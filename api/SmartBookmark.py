@@ -1,7 +1,6 @@
 from transformers import MobileBertTokenizer, MobileBertConfig, TFMobileBertModel
 import tensorflow as tf
 import numpy as np
-import numpy as np
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
